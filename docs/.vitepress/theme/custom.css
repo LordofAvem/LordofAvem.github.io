@@ -95,7 +95,7 @@
 
 .sidebar-toggle-btn {
   border: 1px solid var(--vp-c-border);
-  background: var(--vp-c-bg-elv);
+  background: var(--vp-c-bg);
   background: color-mix(in srgb, var(--vp-c-bg-elv) 80%, transparent);
   color: var(--vp-c-text-1);
   border-radius: 999px;
