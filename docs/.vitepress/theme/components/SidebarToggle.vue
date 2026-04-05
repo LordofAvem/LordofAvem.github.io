@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref, watch } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { useData } from 'vitepress'
 
 const { page } = useData()
@@ -50,20 +50,11 @@ const setOpen = (open: boolean) => {
 }
 
 const toggleSidebar = () => {
-  if (!isDocsPage.value) return
   setOpen(!isOpen.value)
 }
 
 onMounted(() => {
   const saved = readStoredOpen()
   setOpen(saved === null ? DEFAULT_OPEN : saved === 'true')
-})
-
-watch(isDocsPage, (val) => {
-  if (val) {
-    syncClass()
-  } else {
-    document.documentElement.classList.remove('sidebar-collapsed')
-  }
 })
 </script>
