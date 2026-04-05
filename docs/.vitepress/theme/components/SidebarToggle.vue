@@ -30,7 +30,8 @@ const readStoredOpen = () => {
   if (typeof window === 'undefined') return null
   try {
     return localStorage.getItem(STORAGE_KEY)
-  } catch {
+  } catch (error) {
+    console.warn('Failed to read sidebar state from localStorage', error)
     return null
   }
 }
@@ -39,7 +40,8 @@ const writeStoredOpen = (open: boolean) => {
   if (typeof window === 'undefined') return
   try {
     localStorage.setItem(STORAGE_KEY, String(open))
-  } catch {
+  } catch (error) {
+    console.warn('Failed to persist sidebar state to localStorage', error)
   }
 }
 
