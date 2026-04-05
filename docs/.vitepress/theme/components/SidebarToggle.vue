@@ -3,7 +3,7 @@
     v-if="isDocsPage"
     class="sidebar-toggle-btn"
     type="button"
-    :aria-label="isOpen ? '收起左侧边栏' : '打开左侧边栏'"
+    :aria-label="isOpen ? 'Collapse left sidebar' : 'Expand left sidebar'"
     @click="toggleSidebar"
   >
     {{ isOpen ? '收起侧栏' : '展开侧栏' }}

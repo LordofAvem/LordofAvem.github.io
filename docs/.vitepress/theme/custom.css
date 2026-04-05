@@ -104,7 +104,7 @@
   transition: all 0.35s var(--vp-cubic-smooth);
 }
 
-@supports (background: color-mix(in srgb, white 80%, black)) {
+@supports (background: color-mix(in srgb, red, blue)) {
   .sidebar-toggle-btn {
     background: color-mix(in srgb, var(--vp-c-bg-elv) 80%, transparent);
   }
