@@ -65,7 +65,6 @@
     opacity 0.4s var(--vp-cubic-smooth);
 }
 
-.VPSidebar.open,
 .VPSidebar {
   animation: sidebar-pop-in 0.5s var(--vp-cubic-bounce);
 }
