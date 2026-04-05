@@ -25,10 +25,27 @@ const syncClass = () => {
   document.documentElement.classList.toggle('sidebar-collapsed', collapsed)
 }
 
+const readStoredOpen = () => {
+  if (typeof window === 'undefined') return null
+  try {
+    return localStorage.getItem(STORAGE_KEY)
+  } catch {
+    return null
+  }
+}
+
+const writeStoredOpen = (open: boolean) => {
+  if (typeof window === 'undefined') return
+  try {
+    localStorage.setItem(STORAGE_KEY, String(open))
+  } catch {
+  }
+}
+
 const setOpen = (open: boolean) => {
   isOpen.value = open
   syncClass()
-  localStorage.setItem(STORAGE_KEY, String(open))
+  writeStoredOpen(open)
 }
 
 const toggleSidebar = () => {
@@ -37,7 +54,7 @@ const toggleSidebar = () => {
 }
 
 onMounted(() => {
-  const saved = localStorage.getItem(STORAGE_KEY)
+  const saved = readStoredOpen()
   setOpen(saved === null ? true : saved === 'true')
 })
 
