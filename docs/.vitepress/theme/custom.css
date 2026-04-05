@@ -96,13 +96,18 @@
 .sidebar-toggle-btn {
   border: 1px solid var(--vp-c-border);
   background: var(--vp-c-bg);
-  background: color-mix(in srgb, var(--vp-c-bg-elv) 80%, transparent);
   color: var(--vp-c-text-1);
   border-radius: 999px;
   padding: 6px 10px;
   margin-right: 10px;
   cursor: pointer;
   transition: all 0.35s var(--vp-cubic-smooth);
+}
+
+@supports (background: color-mix(in srgb, white 80%, black)) {
+  .sidebar-toggle-btn {
+    background: color-mix(in srgb, var(--vp-c-bg-elv) 80%, transparent);
+  }
 }
 
 .sidebar-toggle-btn:hover {

@@ -15,7 +15,7 @@ import { computed, onMounted, ref, watch } from 'vue'
 import { useData } from 'vitepress'
 
 const { page } = useData()
-const STORAGE_KEY = 'vp-sidebar-collapsed'
+const STORAGE_KEY = 'vp-sidebar-open'
 const isOpen = ref(true)
 
 const isDocsPage = computed(() => page.value.relativePath !== 'index.md')
@@ -28,7 +28,7 @@ const syncClass = () => {
 const setOpen = (open: boolean) => {
   isOpen.value = open
   syncClass()
-  localStorage.setItem(STORAGE_KEY, String(!open))
+  localStorage.setItem(STORAGE_KEY, String(open))
 }
 
 const toggleSidebar = () => {
@@ -37,8 +37,8 @@ const toggleSidebar = () => {
 }
 
 onMounted(() => {
-  const collapsed = localStorage.getItem(STORAGE_KEY) === 'true'
-  setOpen(!collapsed)
+  const saved = localStorage.getItem(STORAGE_KEY)
+  setOpen(saved === null ? true : saved === 'true')
 })
 
 watch(isDocsPage, (val) => {
