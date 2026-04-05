@@ -27,3 +27,100 @@
   --vp-button-brand-hover-bg: #2ea043;
   --vp-button-brand-active-bg: #238636;
 }
+
+/* 现代非线性动画：按钮、交互元素、页面切换 */
+:root {
+  --vp-cubic-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+  --vp-cubic-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.VPButton,
+.VPSocialLink,
+.VPNavBarMenuLink,
+.VPSidebarItem .link,
+.VPFeature {
+  transition:
+    transform 0.45s var(--vp-cubic-smooth),
+    box-shadow 0.45s var(--vp-cubic-smooth),
+    background-color 0.35s var(--vp-cubic-smooth),
+    color 0.35s var(--vp-cubic-smooth),
+    opacity 0.35s var(--vp-cubic-smooth);
+  will-change: transform;
+}
+
+.VPButton:hover,
+.VPSocialLink:hover,
+.VPFeature:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
+.VPButton:active {
+  transform: translateY(0) scale(0.98);
+  transition-timing-function: var(--vp-cubic-bounce);
+}
+
+.VPSidebar {
+  transition:
+    transform 0.5s var(--vp-cubic-smooth),
+    opacity 0.4s var(--vp-cubic-smooth);
+}
+
+.VPSidebar.open,
+.VPSidebar {
+  animation: sidebar-pop-in 0.5s var(--vp-cubic-bounce);
+}
+
+@keyframes sidebar-pop-in {
+  0% {
+    transform: translateX(-18px) scale(0.985);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .VPButton,
+  .VPSocialLink,
+  .VPNavBarMenuLink,
+  .VPSidebarItem .link,
+  .VPFeature,
+  .VPSidebar {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+.sidebar-toggle-btn {
+  border: 1px solid var(--vp-c-border);
+  background: color-mix(in srgb, var(--vp-c-bg-elv) 80%, transparent);
+  color: var(--vp-c-text-1);
+  border-radius: 999px;
+  padding: 6px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.35s var(--vp-cubic-smooth);
+}
+
+.sidebar-toggle-btn:hover {
+  transform: translateY(-1px) scale(1.02);
+  border-color: var(--vp-c-brand-1);
+}
+
+html.sidebar-collapsed .VPSidebar {
+  transform: translateX(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+html.sidebar-collapsed .VPContent.has-sidebar {
+  padding-left: 0 !important;
+}
+
+@media (max-width: 960px) {
+  .sidebar-toggle-btn {
+    display: none;
+  }
+}
