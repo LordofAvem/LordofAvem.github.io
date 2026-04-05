@@ -1,11 +1,11 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "LordofAvem's Hub",
-  description: "Personal Blog & Skill Accumulation",
+  title: "FLEITI",
+  description: "Recording, Marking, Sharing.",
   
   // 强制全局深色模式 (设为 'dark' 则是默认深色但右上角带切换按钮)
-  appearance: 'force-dark', 
+  appearance: 'dark', 
   
   // 配置网站图标 Favicon
   head: [
@@ -15,9 +15,9 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Skills', link: '/skills/' },
-      { text: 'Blog', link: '/blog/' }
+      { text: '🏠Home', link: '/' },
+      { text: '🛠️Skills', link: '/skills/' },
+      { text: '📄Blog', link: '/blog/' }
     ],
 
     sidebar: [
