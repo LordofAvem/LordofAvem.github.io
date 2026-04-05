@@ -1,0 +1,29 @@
+/* 覆盖 VitePress 默认变量为 GitHub 深色模式的配色 */
+:root {
+  /* 定义全局的基础色（比如按钮、链接），这里用 GitHub 深色模式的经典蓝色 */
+  --vp-c-brand-1: #58a6ff;
+  --vp-c-brand-2: #388bfd;
+  --vp-c-brand-3: #1f6feb;
+}
+
+.dark {
+  /* 背景颜色 - GitHub 深黑 */
+  --vp-c-bg: #0d1117;
+  --vp-c-bg-alt: #161b22;
+  --vp-c-bg-elv: #21262d;
+  
+  /* 文本颜色 */
+  --vp-c-text-1: #c9d1d9;    /* 主要文本 */
+  --vp-c-text-2: #8b949e;    /* 次要文本 */
+  --vp-c-text-3: #484f58;    /* 弱化文本 */
+  
+  /* 边框和分割线 */
+  --vp-c-border: #30363d;
+  --vp-c-divider: #21262d;
+  --vp-c-gutter: #0d1117;
+  
+  /* 调整按钮为主色调 */
+  --vp-button-brand-bg: #238636;        /* GitHub 提交按钮那种标志性的绿色 */
+  --vp-button-brand-hover-bg: #2ea043;
+  --vp-button-brand-active-bg: #238636;
+}
