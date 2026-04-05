@@ -16,7 +16,8 @@ import { useData } from 'vitepress'
 
 const { page } = useData()
 const STORAGE_KEY = 'vp-sidebar-open'
-const isOpen = ref(true)
+const DEFAULT_OPEN = true
+const isOpen = ref(DEFAULT_OPEN)
 
 const isDocsPage = computed(() => page.value.relativePath !== 'index.md')
 
@@ -55,7 +56,7 @@ const toggleSidebar = () => {
 
 onMounted(() => {
   const saved = readStoredOpen()
-  setOpen(saved === null ? true : saved === 'true')
+  setOpen(saved === null ? DEFAULT_OPEN : saved === 'true')
 })
 
 watch(isDocsPage, (val) => {

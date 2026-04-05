@@ -45,7 +45,6 @@
     background-color 0.35s var(--vp-cubic-smooth),
     color 0.35s var(--vp-cubic-smooth),
     opacity 0.35s var(--vp-cubic-smooth);
-  will-change: transform;
 }
 
 .VPButton:hover,
