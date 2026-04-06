@@ -4,19 +4,19 @@ layout: home
 
 hero:
   name: "Avem's"
-  text: "Notes 📒🖊️"
+  text: "筆記 📒🖊️"
   tagline: :)
   actions:
     - theme: brand
-      text: 🛠️ View Skills
-      link: /skills/
+      text: 🛠️ 查看技能
+      link: /zh/skills/
     - theme: alt
-      text: 📄 Read Blog
-      link: /blog/
+      text: 📄 阅读博客
+      link: /zh/blog/
 
 features:
-  - title: TBD
-    details: TBD
+  - title: 待定
+    details: 待定
   - title: idk
     details: tbd
   - title: tbd

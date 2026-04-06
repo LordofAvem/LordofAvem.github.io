@@ -1,0 +1,16 @@
+<svg width="682" height="100" viewBox="0 0 682 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0H62V100H0V0Z" fill="#CAD0D7"/>
+<path d="M124 0H186V100H124V0Z" fill="#CAD0D7"/>
+<path d="M248 0H310V100H248V0Z" fill="#CAD0D7"/>
+<path d="M372 0H434V100H372V0Z" fill="#CAD0D7"/>
+<path d="M496 0H558V100H496V0Z" fill="#CAD0D7"/>
+<line x1="62" y1="2" x2="124" y2="2" stroke="#CAD0D7" stroke-width="4"/>
+<line x1="62" y1="48" x2="124" y2="48" stroke="#CAD0D7" stroke-width="4"/>
+<line x1="186" y1="98" x2="248" y2="98" stroke="#CAD0D7" stroke-width="4"/>
+<line x1="310" y1="48" x2="372" y2="48" stroke="#CAD0D7" stroke-width="4"/>
+<line x1="310" y1="98" x2="372" y2="98" stroke="#CAD0D7" stroke-width="4"/>
+<path d="M310 2H374M310 2H374" stroke="#CAD0D7" stroke-width="4"/>
+<path d="M434 2H496M434 2H496" stroke="#CAD0D7" stroke-width="4"/>
+<path d="M558 2H620M558 2H620" stroke="#CAD0D7" stroke-width="4"/>
+<path d="M620 0H682V100H620V0Z" fill="#CAD0D7"/>
+</svg>

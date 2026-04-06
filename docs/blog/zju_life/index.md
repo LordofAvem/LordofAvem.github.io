@@ -1,3 +1,3 @@
-# My Blog
+# Days at ZJU
 
 Under construction

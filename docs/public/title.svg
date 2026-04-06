@@ -1,0 +1,16 @@
+<svg width="682" height="100" viewBox="0 0 682 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 24C0 10.7452 10.7452 0 24 0H62V76C62 89.2548 51.2548 100 38 100H0V24Z" fill="#3E3E45"/>
+<path d="M124 0H162C175.255 0 186 10.7452 186 24V100H148C134.745 100 124 89.2548 124 76V0Z" fill="#3E3E45"/>
+<path d="M248 24C248 10.7452 258.745 0 272 0H310V100H248V24Z" fill="#3E3E45"/>
+<path d="M372 24C372 10.7452 382.745 0 396 0H434V76C434 89.2548 423.255 100 410 100H372V24Z" fill="#3E3E45"/>
+<path d="M496 0H558V76C558 89.2548 547.255 100 534 100H496V0Z" fill="#3E3E45"/>
+<path d="M620 0H658C671.255 0 682 10.7452 682 24V100H644C630.745 100 620 89.2548 620 76V0Z" fill="#3E3E45"/>
+<line x1="61" y1="2" x2="124" y2="2" stroke="#3E3E45" stroke-width="4"/>
+<line x1="62" y1="48" x2="124" y2="48" stroke="#3E3E45" stroke-width="4"/>
+<line x1="186" y1="98" x2="248" y2="98" stroke="#3E3E45" stroke-width="4"/>
+<line x1="310" y1="48" x2="372" y2="48" stroke="#3E3E45" stroke-width="4"/>
+<line x1="310" y1="98" x2="372" y2="98" stroke="#3E3E45" stroke-width="4"/>
+<path d="M310 2H374M310 2H374" stroke="#3E3E45" stroke-width="4"/>
+<path d="M434 2H498M434 2H498" stroke="#3E3E45" stroke-width="4"/>
+<path d="M558 2H622M558 2H622" stroke="#3E3E45" stroke-width="4"/>
+</svg>

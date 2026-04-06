@@ -1,3 +1,3 @@
-# My Blog
+# FPGA Notes
 
 Under construction
