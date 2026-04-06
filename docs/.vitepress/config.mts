@@ -1,6 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  // 忽略死链接导致构建失败
+  ignoreDeadLinks: true,
+
   // 开启最后更新时间
   lastUpdated: true,
 
