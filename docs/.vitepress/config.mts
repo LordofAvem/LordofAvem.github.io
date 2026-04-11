@@ -125,7 +125,30 @@ export default defineConfig({
               }
             ]
           },
-          { text: '📄博客', link: '/zh/blog/' }
+          { 
+            text: '📄博客', 
+            items: [
+              { text: '你好', link: '/zh/blog/' },
+              {
+                items: [
+                  { text: 'ZJU生活', link: '/zh/blog/zju_life' },
+                ]
+              }
+            ]
+          },
+          { 
+            text: '🏛️图书馆', 
+            items: [
+              { text: '扉页', link: '/zh/library/' },
+              {
+                items: [
+                  { text: '游戏', link: '/zh/library/games' },
+                  { text: '电影', link: '/zh/library/movies' },
+                  { text: '剧集', link: '/zh/library/series' },
+                ]
+              }
+            ]
+          },
         ],
 
         // 中文版侧边栏折叠目录
@@ -156,7 +179,34 @@ export default defineConfig({
             items: [
               { text: '欢迎', link: '/zh/blog/' }
             ]
-          }
+          },
+          {
+            text: '图书馆',
+            items: [
+              { text: '扉页', link: '/zh/library/' },
+              { 
+                text: '游戏', 
+                collapsed: true,
+                items: [
+                  { text: '总览', link: '/zh/library/games' },
+                ]
+              },
+              { 
+                text: '电影', 
+                collapsed: true,
+                items: [
+                  { text: '总览', link: '/zh/library/movies' },
+                ]
+              },
+              { 
+                text: '剧集', 
+                collapsed: true,
+                items: [
+                  { text: '总览', link: '/zh/library/series' },
+                ]
+              },
+            ]
+          },
         ]
       }
     }
