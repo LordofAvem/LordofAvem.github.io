@@ -2,35 +2,39 @@
 
 这是我的个人自动化项目索引页，记录了所有旨在“让生活更高效”的技术实践。每个模块包含核心原理、环境配置及详细的使用手册。
 
+<script setup>
+import RepoCard from '../../../.vitepress/theme/components/RepoCard.vue'
+</script>
 
-## 🗂️ 项目概览
+## 🗂️ 核心自动化项目
 
-| 项目名称 | 功能描述 | 状态 | 文档链接 |
-| :--- | :--- | :--- | :--- |
-| **虚拟路径校园跑** | 基于 Xcode & Python 的校园跑路径模拟 | ✅ 已上线 | [查看指南 →](/zh/skills/automation/campus_run) |
-| **自动签到检测** | 基于网站文字匹配的签到检测 | ✅ 已上线 | [查看指南 →](/zh/skills/automation/checkin) |
-| **更多功能...** | 敬请期待 | ⌛ 待更新 | [N/A](#) |
+<br>
 
+<RepoCard 
+  title="Campus-Run-Virtual"
+  url="/zh/skills/automation/campus_run"
+  status="archived"
+  stars="0"
+  forks="0"
+  loc="1.2k"
+  language="Python"
+  :tags="['iOS', 'GPX', 'Xcode']"
+>
+针对校园跑场景设计的虚拟自动化方案，通过脚本生成标准化的操场轨迹并实现 iOS 本地开发者调试模式注入。
+</RepoCard>
 
-## 🚀 核心项目
-
-### 🏃 校园跑虚拟路径
-针对校园跑场景设计的自动化方案，通过脚本生成标准化的操场轨迹，使用Xcode调用iOS开发者功能来执行虚拟路径。
-* **技术栈**: Python, GPX, Xcode.
-* **特色**: 支持 400m/200m 操场路径拾取，仅需给出起始点经纬度和偏转角度。
-* **最新验证**: iOS 26.3 / macOS 26.3.
-* 👉 **[点击此处进入详细说明文档](/zh/skills/automation/campus_run)**
-
-### 📅 自动签到检测
-基于网站文本匹配的脚本辅助提醒ZJU课堂签到。
-* **技术栈**: [待补充，如：Requests, GitHub Actions 等]
-* **特色**: 多关键词检测，支持长时间挂起，支持Bark推送提醒至iPhone.
-* 👉 **[点击此处进入详细说明文档](#)**
-
-
-## 📈 更新日志
-* **2026-04-06**: 初始化自动化工作流主文档，加入“校园跑”与“签到检测”模块。
-* **此前**: 完成 `GPXroute.py` 脚本 1.0 版本开发。
+<RepoCard 
+  title="Auto-CheckIn-Detect"
+  url="/zh/skills/automation/checkin_detect"
+  status="archived"
+  stars="0"
+  forks="0"
+  loc="300"
+  language="Python"
+  :tags="['Playwright', 'Bark', 'Tkinter']"
+>
+基于网站文本匹配的脚本辅助，自动识别签到关键词并推送到 iPhone 移动端。
+</RepoCard>
 
 ---
 > *能自动化的事情，就不要再浪费生命了*

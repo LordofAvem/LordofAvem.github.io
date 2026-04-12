@@ -128,7 +128,7 @@ export default defineConfig({
           { 
             text: '📄博客', 
             items: [
-              { text: '你好', link: '/zh/blog/' },
+              { text: '欢迎', link: '/zh/blog/' },
               {
                 items: [
                   { text: 'ZJU生活', link: '/zh/blog/zju_life' },
@@ -163,6 +163,7 @@ export default defineConfig({
                 items: [
                   { text: '介绍', link: '/zh/skills/automation/' },
                   { text: '虚拟路径校园跑', link: '/zh/skills/automation/campus_run' },
+                  { text: '学在浙大签到检测', link: '/zh/skills/automation/checkin_detect' },
                 ]
               },
               { 
@@ -177,7 +178,14 @@ export default defineConfig({
           {
             text: '博客',
             items: [
-              { text: '欢迎', link: '/zh/blog/' }
+              { text: '欢迎', link: '/zh/blog/' },
+              { 
+                text: 'ZJU生活', 
+                collapsed: true,
+                items: [
+                  { text: '写在前面', link: '/zh/blog/zju_life' },
+                ]
+              },
             ]
           },
           {
